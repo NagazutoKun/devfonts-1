@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+   
+    <title>formulario</title>
+</head>
+<body>
+    <header>
+        <img src="img/shale loco k fondazo.png" alt="logo" width="300px">
+        <h1>Formulario</h1>
+        <div class="nav reg">
+            <a href="index.html">Inicio</a>
+            <a href="">Registrarse</a>
+            <a href="ingreso.html">Ingresar</a>
+        </div>
+    </header>
+    <div class="flex cuerpo fondo-reg">
+        <img src="img/secretario.png" alt="secretario" width="450px" height="350px" class="imagen">
+        <form action="includes/ingreso.php" method="post" class="formulario" autocomplete="off" id="formulario">
+            <fieldset>
+                <legend>Datos del Usuario</legend>
+                <!--/////   INPUT NOMBRE   /////-->
+                <label for="nombre">Nombre</label><br>
+                <input type="text" name="nombre" id="nombre"><br>
+                <!--/////   INPUT APELLIDO   /////-->
+                <label for="apellido">Apellido</label><br>
+                <input type="text" name="apellido" id="apellido"><br>
+                <!--/////   INPUT DOCUMENTO   /////-->
+                <label for="documento">documento</label><br>
+                <input type="number" name="documento" id="documento"><br>
+                <!--/////   INPUT CORREO ELECTRONICO   /////-->
+                <label for="correo">Correo Electronico</label><br>
+                <input type="email" name="correo" id="correo"><br>
+                <!--/////   INPUT PASSWORD   /////-->
+                <label for="password">Contraseña</label><br>
+                <input type="password" name="password" id="password">
+                <!--/////   BOTON Y IMAGEN   /////-->
+                <input type="hidden" name="tipo" value="3">
+                <div class="flex" id="contenedor"></div>
+                <button type="submit" id="boton">Enviar</button>
+            </fieldset> 
+        </form>
+    </div>
+    <footer class="flex-footer">
+        <p class="personas">elaborado por: <br>
+        Jose Manuel Perrilla - 
+        Harold Guzman - 
+        Jeyson Guzman</p>
+        <p class="derechos">Todos los derechos reservados y pertenecen a DEVSFONTS 2020</p>
+    </footer>  
+    <script src="javascript/registro.js"></script>     
+</body>
+</html>
