@@ -1,6 +1,6 @@
 /*************************************** ESTILOS GENERALES ***********************************************/
 :root {
-    --colorPrincipal : #B9B7C1;
+    --colorPrincipal : #f5f5dc;
     --separacion : 90px
 }
 
@@ -83,7 +83,8 @@ header{
 }
 
 footer {
-    background-color: var(--colorPrincipal);
+    background-color: #333;
+    color:white;
 }
 
 .flex-footer{
@@ -102,9 +103,13 @@ footer {
 /******************************* pagina de registro *****************************************************/
 
 .fondo-reg{
-    background: #373B44;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: url("../img/fondo3.png");
+    background-repeat:no-repeat;
+    background-size: 100%;
+    background-position: center;
+    
+
+
 }
 
 .formulario {
@@ -182,12 +187,13 @@ header h1 {
 .contenedor-gerencia {
     margin-top: 30px;
     text-align: center;
-    background-color: hsla(0, 100%, 100%, 0.5);
+    background-color: hsla(0, 50%, 20%, 0.5);
     padding: 15px;
     box-sizing: border-box;
     height: 350px;
     border-radius: 10px;
     font-size: 25px;
+    color: white;
 }
 .separcion_izq{
     margin-left: var(--separacion);
