@@ -1,31 +1,126 @@
 /*************************************** ESTILOS GENERALES ***********************************************/
+body {
+	
+	background:url(../img/fondo3.png) no-repeat center top;
+	background-size: cover; 
+	
+}
+
 :root {
     --colorPrincipal : #f5f5dc;
     --separacion : 90px
 }
 
-header{
-    background-color:var(--colorPrincipal);
-    display: flex;
-    margin-top: -10px;
+#main-header {
+	background: #f5f5dc;
+	color: white;
+	height: 80px;
+}	
+	#main-header a {
+		color: #000000;
+	}
+
+/*
+ * Logo
+ */
+#logo-header {
+	float: left;
+	padding: 15px 0 0 20px;
+	text-decoration: none;
 }
-.nav {
-    text-align: right;
-    margin-left: 700px;
-    margin-top: 20px;
+	#logo-header:hover {
+        color: #0b76a6;
+
+	}
+	
+	#logo-header .site-name {
+		display: block;
+		font-weight: 700;
+		font-size: 1.2em;
+	}
+	
+	#logo-header .site-desc {
+		display: block;
+		font-weight: 300;
+		font-size: 0.8em;
+		color: #999;
+	}
+	
+
+/*
+ * Navegación
+ */
+nav {
+	float: right;
+}
+	nav ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		padding-right: 20px;
+	}
+	
+		nav ul li {
+			display: inline-block;
+			line-height: 80px;
+		}
+			
+			nav ul li a {
+				display: block;
+				padding: 0 10px;
+				text-decoration: none;
+			}
+			
+				nav ul li a:hover {
+					background: #0b76a6;
+				}
+
+
+#main-content {
+	background: rgba(0, 0, 0, 0.384);
+	width: 90%;
+	max-width: 800px;
+	margin: 20px auto;
+	box-shadow: 0 0 10px rgba(0,0,0,.1);
 }
 
-.nav a{
-    color: black;
-    font-size: 20px;
-    margin-left: 20px;
-    text-decoration: none;
-}
+	#main-content header,
+	#main-content .content {
+		padding: 40px;
+	}
 
-.nav a:hover {
-    color: white;
-    position: relative;
-    font-size: 25px;
+
+#main-footer {
+	background: #333;
+	color: white;
+	text-align: center;
+	padding: 20px;
+    margin-top: 105px;
+    max-width: 100%;
+    background-size: cover;
+}
+	#main-footer p {
+		margin: 0;
+	}
+	
+	#main-footer a {
+		color: white;
+    }
+    
+    #main-header {
+        background: #f5f5dc;
+        color: white;
+        height: 80px;
+        
+        width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+        left: 0; /* Posicionamos la cabecera al lado izquierdo */
+        top: 0; /* Posicionamos la cabecera pegada arriba */
+        position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+    }
+
+.logoimg {
+    width: 180px;
+    height: 37px;
 }
 
 .flex {
@@ -38,13 +133,6 @@ header{
     height: 500px;
 }
 
-.fondoVideo {
-    width: 100%;
-    height: 500px;
-    position: absolute;
-    top:55px;
-    background-color: hsla(0, 100%, 100%, 0.1);
-}
 
 .contenedor {
     position: absolute;
